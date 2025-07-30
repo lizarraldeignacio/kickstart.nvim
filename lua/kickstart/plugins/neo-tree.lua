@@ -20,6 +20,19 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      filtered_items = {
+        visible = false,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_by_name = {
+          'node_modules',
+        },
+        hide_by_pattern = {
+          '*.meta',
+          '*/src/*/tsconfig.json',
+        },
+        never_show = {},
+      },
     },
   },
 }
